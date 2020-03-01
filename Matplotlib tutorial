@@ -1,0 +1,49 @@
+(1):
+折线图：
+  plt.plot(x,y,label = 'first line')
+  plt.plot(x1,y1,label = 'second line')
+  plt.legend()
+  plt.xlabel('x axis')
+  plt.ylabel('y axis')
+  plt.title('fucking figure')
+  plt.suptitle('godamn')
+
+(2)
+ 柱状图：
+  plt.bar([1,2,3,4,5],[6,7,8,9,10],label = 'example one',color = 'y')
+  plt.bar([1,2,3,4,5],[3,5,9,4,1],label = 'example two',color = 'r')
+
+  plt.legend()
+  plt.xlabel('fuck')
+  plt.ylabel('bitch')
+  plt.title('super bitch')
+
+(3)
+  直方图：
+   plt.hist(population_ages, bins, histtype='bar', rwidth=0.8) 
+  
+ (4)
+  散点图：
+   plt.scatter(x,y, label='skitscat', color='k', s=25, marker="o")
+ 
+ (5)
+ 堆叠图：
+   plt.stackplot(days, sleeping,eating,working,playing, colors=['m','c','r','k'])
+  
+ 
+ (6) 
+ 饼状图：
+  slices = [7,2,2,13]
+  activities = ['sleeping','eating','working','playing']
+  cols = ['c','m','r','b']
+
+  plt.pie(slices,
+        labels=activities,
+        colors=cols,
+        startangle=90,
+        shadow= True,
+        explode=(0,0.1,0,0),
+        autopct='%1.1f%%')
+        
+   (7)加载数据：
+     x, y = np.loadtxt('example.txt', delimiter=',', unpack=True)
