@@ -48,4 +48,5 @@
   vv = np.tile(v, (4, 1))   # Stack 4 copies of v on top of each other
   
 (9):
-  
+  plt.xlim((-5, 5))
+  plt.ylim((-2, 2))
